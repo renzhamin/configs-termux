@@ -1,0 +1,4 @@
+pm list packages | \
+sed 's/^package://' | rg com.google | \
+xargs -n1 \
+~/scripts/disable.sh
